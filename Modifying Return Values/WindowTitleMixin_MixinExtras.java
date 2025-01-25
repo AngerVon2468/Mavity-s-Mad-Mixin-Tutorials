@@ -11,7 +11,7 @@ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 @Mixin(MinecraftClient.class)
 public class WindowTitleMixin_MixinExtras {
 
-    @ModifyReturnValue(method = "getWindowTitle", at = @At(value = "RETURN"))
+    @ModifyReturnValue(method = "getWindowTitle", at = @At("RETURN"))
     public String getWindowTitle(String original) {
         return "Yahaha :3";
     }
